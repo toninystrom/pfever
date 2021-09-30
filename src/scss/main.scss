@@ -1,0 +1,6 @@
+@import 'private/reset';
+@import 'variables';
+
+p {
+    border: 1px solid $main-color;
+}
