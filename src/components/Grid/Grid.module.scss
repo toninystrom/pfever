@@ -36,7 +36,13 @@ $alignItems: (
     }
 
     
-
+    @media screen and (max-width: 599px) {
+        @for $i from 1 to 13 {
+            &_xs_#{$i} {
+                flex-basis: math.div($i, 12) * 100%; // old division x/y deprecated, using math.div(x, y)
+            }
+        }
+    }
     @include breakpoint("sm") {
         @for $i from 1 to 13 {
             &_sm_#{$i} {

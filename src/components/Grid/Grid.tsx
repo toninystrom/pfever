@@ -1,13 +1,14 @@
 import cn from 'classnames';
-import React, { ReactNode } from 'react';
+import React from 'react';
 import styles from './Grid.module.scss';
 
 type Cols = 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12;
 type Spacing = 'sm' | 'md' | 'lg';
 type JustifyContent = 'flex-start' | 'center' | 'flex-end' | 'space-between';
 type AlignItems = 'flex-start' | 'center' | 'flex-end';
+
 interface Props {
-    children: ReactNode;
+    children: React.ReactNode;
     container?: boolean;
     item?: boolean;
     spacing?: Spacing;

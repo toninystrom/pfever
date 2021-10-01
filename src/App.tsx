@@ -11,13 +11,13 @@ function App() {
             className="App"
             style={{ margin: '16px', position: 'relative', height: '100vh' }}
         >
-            <GridRuler spacing="sm"></GridRuler>
+            {/* <GridRuler spacing="sm"></GridRuler> */}
 
             <Grid
                 container
                 spacing="sm"
-                justifyContent="center"
-                alignItems="center"
+                justifyContent="flex-start"
+                alignItems="flex-start"
                 style={{ height: '100%' }}
             >
                 <Grid item xs={12} sm={6} md={4} lg={3}>
